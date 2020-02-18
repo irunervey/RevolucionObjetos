@@ -64,6 +64,6 @@ void keyPressed(){
   if(key== ' '){
      puntos=new ArrayList<int[]>();
      figura=new Polygon(puntos);
-     mostrandoFigura=true;
+     mostrandoFigura=false;
   }
 }
