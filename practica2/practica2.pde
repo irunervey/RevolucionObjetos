@@ -11,6 +11,7 @@ void setup(){
 
 void draw(){
   background(0);
+  imprimirMenu();
   pintarEje();
   pintarFigura();
 }
@@ -34,7 +35,12 @@ void pintarEje(){
   line(width/2,0,width/2,height);
   
 }
-
+void imprimirMenu(){
+  textSize(15);
+  text("Boton derecho añadir punto (lado derecho)",10,10);
+  text("Boton izquierdo mostrar figura",10,25);
+  text("Espacio para hacer una nueva imagen",10,40);
+}
 void mousePressed(){
   if(mouseButton==LEFT && mouseX>width/2 && mostrandoFigura==false){
     anadirPunto();
